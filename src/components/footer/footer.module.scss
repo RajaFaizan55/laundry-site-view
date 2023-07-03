@@ -1,0 +1,66 @@
+@import "../../styles/breakpoints";
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  @media (max-width: $ssm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .logoSection {
+    padding-right: 50px;
+    span {
+      font-size: 12px;
+    }
+  }
+
+  .infoSection {
+    display: flex;
+    flex-direction: column;
+    span {
+      margin: 5px 0px;
+      font-size: 12px;
+    }
+  }
+}
+
+.rightsReserved {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0px;
+  span {
+    font-size: 10px;
+  }
+}
+
+.imgSection {
+  .socialImg {
+    width: 30px;
+    margin-right: 40px;
+    cursor: pointer;
+  }
+  p {
+    margin: 10px 0px;
+  }
+
+  .playstoree {
+    padding: 8px 15px;
+    border-radius: 50px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 98px;
+    margin-right: 10px;
+    cursor: pointer;
+    span {
+      font-size: 7px;
+    }
+    img {
+      width: 20px;
+      margin-right: 5px;
+    }
+  }
+}

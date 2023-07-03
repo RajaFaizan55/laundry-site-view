@@ -1,0 +1,99 @@
+@import "../../styles/breakpoints";
+
+.carousalSection {
+  margin: 150px 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (max-width: $mmd) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .firstCarousal {
+    padding: 6px;
+    border-radius: 8px;
+    margin-bottom: 100px;
+
+    @media (max-width: $sm) {
+      margin-bottom: 50px;
+    }
+    @media (max-width: $xxs) {
+      margin-bottom: 25px;
+    }
+    h1 {
+      font-size: 62px;
+      @media (max-width: $sm) {
+        font-size: 42px;
+      }
+      @media (max-width: $xxs) {
+        font-size: 22px;
+      }
+    }
+  }
+  .secondCarsoual {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+    border-radius: 7px;
+    margin-right: 70px;
+    border-radius: 8px;
+    margin: 5px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    @media (max-width: $ssm) {
+      max-width: 200px;
+    }
+    @media (min-width: $ssm) {
+      max-width: 380px;
+    }
+    span {
+      max-width: 100px;
+    }
+    h3 {
+      margin: 30px 0px 3px 0px;
+    }
+  }
+  .childDiv {
+    position: absolute;
+    top: 0px;
+    left: -16px;
+    img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+    }
+  }
+  .customButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+.paginationDotsPosition {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin-left: 20px;
+  .paginationDot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #000;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  .emptypaginationDot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: lightgray;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+}

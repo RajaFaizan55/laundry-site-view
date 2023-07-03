@@ -1,0 +1,66 @@
+@import "../../styles/breakpoints";
+
+.container {
+  width: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  position: relative;
+  max-width: 300px;
+  border-radius: 13px;
+  padding: 20px;
+  @media (max-width: $xxs) {
+    max-width: 200px;
+  }
+  .mainImg {
+    width: 100%;
+    height: 150px;
+    border-radius: 13px;
+  }
+  .childDiv {
+    position: absolute;
+    top: 56%;
+    right: -140px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    @media (max-width: $xxs) {
+      right: -66px;
+      top: 61%;
+      padding: 5px;
+    }
+  }
+  .tripToGree {
+    padding-right: 35px;
+    border-right: 1px solid lightgray;
+    margin-right: 5px;
+  }
+  .imgSection {
+    display: flex;
+    margin: 30px 0px;
+    .circularDiv {
+      width: 25px;
+      height: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: lightgray;
+      margin-right: 20px;
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+  .footerSection {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  }
+}

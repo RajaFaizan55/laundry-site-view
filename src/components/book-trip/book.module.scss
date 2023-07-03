@@ -1,0 +1,14 @@
+.container {
+  margin: 50px 0px;
+  display: flex;
+  align-items: center;
+  .box {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+  }
+}

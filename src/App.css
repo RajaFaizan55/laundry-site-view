@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.category {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.centerDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0px;
+}
+
+.easyandFast {
+  margin-top: 100px;
+}
+
+.twoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (max-width: 1050px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.mainContainer {
+  padding: 0px 100px;
+  @media (max-width: 675px) {
+    padding: 0px 10px;
+  }
+}
+
+.cardsDiv {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media (max-width: 1000px) {
+    display: flex;
+    justify-content: center;
+  }
+}

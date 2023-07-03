@@ -1,0 +1,20 @@
+@import "../../styles/breakpoints";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 130px 0px;
+  @media (max-width: $sm) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  img {
+    width: 150px;
+    margin-right: 40px;
+    cursor: pointer;
+    @media (max-width: $sm) {
+      margin-bottom: 15px;
+    }
+  }
+}
